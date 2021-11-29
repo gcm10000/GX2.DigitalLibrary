@@ -18,7 +18,6 @@ namespace GX2.DigitalLibrary.Web.Controllers.API
         public AuthorController(IAuthorService authorService) => 
             (_authorService) = (authorService);
 
-        //Get all authors
         [HttpGet()]
         [Authorize(AuthenticationSchemes = "Bearer", Roles = "Admin,User")]
         public IActionResult Index()
@@ -64,13 +63,13 @@ namespace GX2.DigitalLibrary.Web.Controllers.API
             return BadRequest(new { message = "Erro ao atualizar autor." });
         }
 
-        [Route("[action]/{index}")]
+        [Route("[action]/{id}")]
         [HttpDelete()]
         [Authorize(AuthenticationSchemes = "Bearer", Roles = "Admin")]
 
-        public async Task<IActionResult> Delete(int index)
+        public async Task<IActionResult> Delete(int id)
         {
-            var result = _authorService.DeleteAuthor(index);
+            var result = _authorService.DeleteAuthor(id);
             await _authorService.SaveAsync();
 
             if (result)
