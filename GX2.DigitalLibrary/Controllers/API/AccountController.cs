@@ -67,13 +67,11 @@ namespace GX2.DigitalLibrary.Web.Controllers.API
             }
         }
 
-        [Route("[action]/{index}")]
+        [Route("[action]/{id}")]
         [HttpDelete()]
         [Authorize(AuthenticationSchemes = "Bearer", Roles = "Admin")]
         public async Task<IActionResult> DeleteAsync(string id)
         {
-            if (!ModelState.IsValid)
-                return BadRequest(new { message = "ModelState is false." });
             try
             {
                 var result = await _accountService.DeleteAsync(id);
