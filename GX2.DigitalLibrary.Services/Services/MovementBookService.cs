@@ -63,19 +63,16 @@ namespace GX2.DigitalLibrary.Business.Services
             var book = _bookRepository.GetIncludeBookByID(bookViewModel.Id);
             if (book != null)
             {
-                if (book.Quantity > 0)
+                var userName = _httpContextAccessor.HttpContext.User.FindFirst(ClaimTypes.Name).Value;
+                var containsBook = _userRepository.ContainsBook(userName, book);
+                var userId = _userManager.Users.FirstOrDefault(x => x.UserName == userName).Id;
+                var bookId = book.Id;
+                if (containsBook)
                 {
-                    var userName = _httpContextAccessor.HttpContext.User.FindFirst(ClaimTypes.Name).Value;
-                    var containsBook = _userRepository.ContainsBook(userName, book);
-                    var userId = _userManager.Users.FirstOrDefault(x => x.UserName == userName).Id;
-                    var bookId = book.Id;
-                    if (containsBook)
-                    {
-                        _movementBookRepository.RemoveBookToUser(userId, bookId);
-                        book.Quantity++;
-                        _bookRepository.UpdateBook(book);
-                        return true;
-                    }
+                    _movementBookRepository.RemoveBookToUser(userId, bookId);
+                    book.Quantity++;
+                    _bookRepository.UpdateBook(book);
+                    return true;
                 }
             }
 
