@@ -26,12 +26,12 @@ namespace GX2.DigitalLibrary.Web.Controllers.API
             return Ok(authors);
         }
 
-        [Route("{index}")]
+        [Route("{id}")]
         [HttpGet()]
         [Authorize(AuthenticationSchemes = "Bearer", Roles = "Admin,User")]
-        public IActionResult Find(int index)
+        public IActionResult Find(int id)
         {
-            var author = _authorService.GetAuthorByID(index);
+            var author = _authorService.GetAuthorByID(id);
             return Ok(author);
         }
 
