@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.12" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\GX2.DigitalLibrary.DTO\GX2.DigitalLibrary.DTO.csproj" />
+    <ProjectReference Include="..\GX2.DigitalLibrary.Interfaces\GX2.DigitalLibrary.Interfaces.csproj" />
+  </ItemGroup>
+
+</Project>

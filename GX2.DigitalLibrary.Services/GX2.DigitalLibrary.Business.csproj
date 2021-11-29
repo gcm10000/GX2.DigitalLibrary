@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <AssemblyName>GX2.DigitalLibrary.Business</AssemblyName>
+    <RootNamespace>GX2.DigitalLibrary.Business</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="10.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="5.0.12" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="6.0.0" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.14.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\GX2.DigitalLibrary.DTO\GX2.DigitalLibrary.DTO.csproj" />
+    <ProjectReference Include="..\GX2.DigitalLibrary.Interfaces\GX2.DigitalLibrary.Interfaces.csproj" />
+    <ProjectReference Include="..\GX2.DigitalLibrary.Repositories\GX2.DigitalLibrary.Repositories.csproj" />
+    <ProjectReference Include="..\GX2.DigitalLibrary.ViewModel\GX2.DigitalLibrary.ViewModel.csproj" />
+  </ItemGroup>
+
+</Project>

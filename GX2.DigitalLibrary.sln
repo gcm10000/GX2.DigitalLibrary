@@ -1,0 +1,85 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31624.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GX2.DigitalLibrary.Web", "GX2.DigitalLibrary\GX2.DigitalLibrary.Web.csproj", "{5668C98F-579B-4605-8467-6390028C2EB9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Web", "1 - Web", "{ED08F465-BD7F-4C33-AF05-82E091B9CCCF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Application", "3 - Application", "{EB9EA851-C609-4567-8AC6-64802C7AB795}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GX2.DigitalLibrary.DTO", "GX2.DigitalLibrary.DTO\GX2.DigitalLibrary.DTO.csproj", "{156E8001-F232-4E45-9DF5-D09C3C2432EE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GX2.DigitalLibrary.Repositories", "GX2.DigitalLibrary.Repositories\GX2.DigitalLibrary.Repositories.csproj", "{4BCA8AE0-AC61-4212-94FD-DD0A757B62F8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GX2.DigitalLibrary.Business", "GX2.DigitalLibrary.Services\GX2.DigitalLibrary.Business.csproj", "{D7623070-F4DC-4860-8577-71302D829EE8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Comum", "2 - Comum", "{8D425229-90C4-4F6F-96AE-BE1E6933F564}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GX2.DigitalLibrary.Interfaces", "GX2.DigitalLibrary.Interfaces\GX2.DigitalLibrary.Interfaces.csproj", "{376BCA9C-DAF6-4309-BCFC-8FC09D6C29E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GX2.DigitalLibrary.ViewModel", "GX2.DigitalLibrary.ViewModel\GX2.DigitalLibrary.ViewModel.csproj", "{3FF240C4-148A-48EF-AA3B-0E5844FF9CDB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GX2.DigitalLibrary.Tests", "GX2.DigitalLibrary.Tests\GX2.DigitalLibrary.Tests.csproj", "{25D8CDCB-C8DF-4856-80A4-25C896166358}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - Tests", "4 - Tests", "{474D1CEC-35BC-4465-BA2B-E6054FE40776}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GX2.DigitalLibrary.Helper", "GX2.DigitalLibrary.Helper\GX2.DigitalLibrary.Helper.csproj", "{67440B99-74F9-426D-B253-0ACF66C39CFC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5668C98F-579B-4605-8467-6390028C2EB9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5668C98F-579B-4605-8467-6390028C2EB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5668C98F-579B-4605-8467-6390028C2EB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5668C98F-579B-4605-8467-6390028C2EB9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{156E8001-F232-4E45-9DF5-D09C3C2432EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{156E8001-F232-4E45-9DF5-D09C3C2432EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{156E8001-F232-4E45-9DF5-D09C3C2432EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{156E8001-F232-4E45-9DF5-D09C3C2432EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4BCA8AE0-AC61-4212-94FD-DD0A757B62F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4BCA8AE0-AC61-4212-94FD-DD0A757B62F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4BCA8AE0-AC61-4212-94FD-DD0A757B62F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4BCA8AE0-AC61-4212-94FD-DD0A757B62F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7623070-F4DC-4860-8577-71302D829EE8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7623070-F4DC-4860-8577-71302D829EE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7623070-F4DC-4860-8577-71302D829EE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7623070-F4DC-4860-8577-71302D829EE8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{376BCA9C-DAF6-4309-BCFC-8FC09D6C29E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{376BCA9C-DAF6-4309-BCFC-8FC09D6C29E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{376BCA9C-DAF6-4309-BCFC-8FC09D6C29E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{376BCA9C-DAF6-4309-BCFC-8FC09D6C29E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3FF240C4-148A-48EF-AA3B-0E5844FF9CDB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3FF240C4-148A-48EF-AA3B-0E5844FF9CDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3FF240C4-148A-48EF-AA3B-0E5844FF9CDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3FF240C4-148A-48EF-AA3B-0E5844FF9CDB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{25D8CDCB-C8DF-4856-80A4-25C896166358}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{25D8CDCB-C8DF-4856-80A4-25C896166358}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{25D8CDCB-C8DF-4856-80A4-25C896166358}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{25D8CDCB-C8DF-4856-80A4-25C896166358}.Release|Any CPU.Build.0 = Release|Any CPU
+		{67440B99-74F9-426D-B253-0ACF66C39CFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67440B99-74F9-426D-B253-0ACF66C39CFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67440B99-74F9-426D-B253-0ACF66C39CFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67440B99-74F9-426D-B253-0ACF66C39CFC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5668C98F-579B-4605-8467-6390028C2EB9} = {ED08F465-BD7F-4C33-AF05-82E091B9CCCF}
+		{156E8001-F232-4E45-9DF5-D09C3C2432EE} = {EB9EA851-C609-4567-8AC6-64802C7AB795}
+		{4BCA8AE0-AC61-4212-94FD-DD0A757B62F8} = {EB9EA851-C609-4567-8AC6-64802C7AB795}
+		{D7623070-F4DC-4860-8577-71302D829EE8} = {EB9EA851-C609-4567-8AC6-64802C7AB795}
+		{376BCA9C-DAF6-4309-BCFC-8FC09D6C29E8} = {8D425229-90C4-4F6F-96AE-BE1E6933F564}
+		{3FF240C4-148A-48EF-AA3B-0E5844FF9CDB} = {8D425229-90C4-4F6F-96AE-BE1E6933F564}
+		{25D8CDCB-C8DF-4856-80A4-25C896166358} = {474D1CEC-35BC-4465-BA2B-E6054FE40776}
+		{67440B99-74F9-426D-B253-0ACF66C39CFC} = {8D425229-90C4-4F6F-96AE-BE1E6933F564}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FD41DD14-90B4-4B5F-9403-D060269DCA49}
+	EndGlobalSection
+EndGlobal

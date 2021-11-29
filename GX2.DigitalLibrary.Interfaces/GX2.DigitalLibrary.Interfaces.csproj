@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\GX2.DigitalLibrary.DTO\GX2.DigitalLibrary.DTO.csproj" />
+    <ProjectReference Include="..\GX2.DigitalLibrary.ViewModel\GX2.DigitalLibrary.ViewModel.csproj" />
+  </ItemGroup>
+
+</Project>
